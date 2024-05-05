@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Rock Paper Scissors</title>
+            <link rel="icon" href="https://w7.pngwing.com/pngs/941/742/png-transparent-rps-hd-logo-thumbnail.png">
+            <link rel="stylesheet" href="RPS.css">
+            <script src="RPS.js"></script>
+      </head>
+      <body>
+            <p class="title-text">Rock Paper Scissors</p>
+
+            <button class="rps-button" onclick="Players('Rock')">
+            <img class="rps-emoji" src="image rps/rock-emoji.png">
+            </button>
+
+            <button class="rps-button" onclick="Players('Paper')">
+            <img class="rps-emoji" src="image rps/paper-emoji.png"></button>
+
+            <button class="rps-button" onclick="Players('Scissors')">
+            <img class="rps-emoji" src="image rps/scissors-emoji.png"></button>
+
+            <button class="reset-button" onclick ="
+            score.Win = 0,
+            score.Lose = 0,
+            score.Tie = 0;
+            localStorage.removeItem('score');
+            skorelemen()
+            "> Reset Score</button>
+            
+            <p class="output-info"></p>
+            <p class="pick-output"></p>
+
+            <div class="box-score">
+                   <p class="output-score"></p>
+            </div>
+      </body>
+</html>
